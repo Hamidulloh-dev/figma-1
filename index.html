@@ -1,13 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="flex items-center h-20 bg-slate-900 sticky top-0">
+      <div class="flex justify-between w-full mx-40">
+        <img src="img/Logo.svg" alt="" />
+
+        <nav class="flex flex-row gap-x-60">
+          <div class="flex">
+            <ul class="flex flex-row gap-x-8 text-white">
+              <li><a class="hover:text-blue-500" href="">Featured</a></li>
+              <li><a class="hover:text-blue-500" href="">Tutorial</a></li>
+              <li><a class="hover:text-blue-500" href="">Freelanc</a></li>
+              <li><a class="hover:text-blue-500" href="">Design</a></li>
+              <li><a class="hover:text-blue-500" href="">Freebies</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-row gap-x-3">
+            <button
+              class="rounded-sm py-1 px-4 bg-blue-500 text-white hover:bg-blue-400"
+            >
+              Login
+            </button>
+            <button
+              class="rounded-sm py-1 px-4 bg-slate-800 text-white hover:bg-slate-700"
+            >
+              Sign up
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="bg-slate-900">
+      <div class="flex justify-center gap-x-50">
+        <div class="flex flex-col gap-y-10 w-105 mt-30">
+          <h1 class="text-6xl font-bold text-purple-500">
+            Inspiration <br /><span>is everywhere</span>
+          </h1>
+          <p class="text-white">
+            There is no passion to be found playing small in settling for a life
+            that is less than the one you are capable of living
+          </p>
+          <button
+            class="bg-purple-500 text-white w-auto self-start py-3 px-8 rounded-md hover:bg-purple-400">
+            Get started
+          </button>
+        </div>
+        <div class="relative">
+          <img src="img/Saly-11.svg" alt="" />
+          <img class="absolute top-20 left-16" src="img/Saly-26.svg" alt="" />
+        </div>
+      </div>
+      <div class="flex flex-col gap-y-20">
+        <div class="flex justify-between mx-20">
+          <h2 class="text-white text-2xl font-bold">Galleries</h2>
+          <a class="text-blue-500" href="">view all</a>
+        </div>
+        <div class="flex gap-x-5 self-end">
+          <img src="img/Rectangle 16.svg" alt="" />
+          <img src="img/Rectangle 17.svg" alt="" />
+          <img src="img/Rectangle 18.svg" alt="" />
+          <img src="img/Rectangle 19.svg" alt="" />
+        </div>
+      </div>
+      <div class="pt-20 flex flex-col gap-y-10">
+        <div class="flex justify-between mx-20">
+          <h2 class="text-white text-2xl font-bold">Latest Articles</h2>
+          <a class="text-blue-500" href="">view all</a>
+        </div>
+        <div class="flex justify-center gap-x-10">
+          <img src="img/Article-1.svg" alt="" />
+          <img src="img/Article-2.svg" alt="" />
+        </div>
+        <div class="flex justify-center gap-x-10">
+          <img src="img/Article-3.svg" alt="" />
+          <img src="img/Article-4.svg" alt="" />
+        </div>
+        <div class="flex justify-center">
+          <img src="img/Collect Section.svg" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer class="flex bg-slate-900 justify-around pt-30 pb-10">
+      <div class="flex gap-x-30">
+        <div class="flex flex-col text-white gap-y-3">
+          <a href="">Home</a>
+          <a href="">Howe it Works</a>
+          <a href="">Our experts</a>
+          <a href="">Become a partner</a>
+        </div>
+        <div class="flex flex-col text-white gap-y-3">
+          <a href="">Public reviews</a>
+          <a href="">Privacy guide</a>
+          <a href="">Term conditions</a>
+          <a href="">Help & support</a>
+        </div>
+      </div>
+      <div class="text-white w-80 flex flex-col gap-y-5">
+        <div class="flex gap-3">
+          <img src="img/Logo.svg" alt="" />
+          <span class="text-purple-500">Lunchpiration</span>
+        </div>
+        <p>
+          All media, contents, articles and everything here are have copyright
+          material and law.
+        </p>
+        <p>© 2021 Lunchpiration Media Limited.</p>
+      </div>
+    </footer>
+  </body>
 </html>
